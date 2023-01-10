@@ -22,10 +22,8 @@ public class TestCases extends BaseTest {
 		log.Enter_Username("Admin");
 		log.Enter_Password("admin123");
 		log.Click_Submit();
-		
+	
 		assertEquals("OrangeHRM", driver.getTitle());
-
-			
 		
 		// Add Employee Under PIM Link
 		Add_Employee add = new Add_Employee();
@@ -39,7 +37,6 @@ public class TestCases extends BaseTest {
 		add.Save();
 		
 		
-		
 		//Delete Employee
 		Delete_Employee delete=new Delete_Employee();
 		
@@ -48,9 +45,7 @@ public class TestCases extends BaseTest {
 		delete.Search_emp();
 		delete.delete();
 		delete.Confirmation();
-		
-		
-		
+			
 		
 		// logout Test
 		Logout_Page out = new Logout_Page();

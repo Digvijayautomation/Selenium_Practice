@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -25,6 +26,11 @@ public class BaseTest {
 
 	@BeforeSuite
 	public static void setup() {
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		//driver = new ChromeDriver(options); //Remove comment if you want to execute in Headless mode
+		
 		driver = new ChromeDriver();
 		driver.get(config.URL());
 	}

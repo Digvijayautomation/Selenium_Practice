@@ -13,7 +13,7 @@ public class Add_Employee extends BaseTest {
 	private final By FirstName=By.xpath("//input[@name='firstName']");
 	private final By MiddleName=By.xpath("//input[@name='middleName']");
 	private final By LastName=By.xpath("//input[@name='lastName']");
-	private final WebElement Profile=driver.findElement(By.xpath("//div[@class=\"employee-image-wrapper\"]"));
+	private final WebElement Profile=driver.findElement(By.xpath("//button[@class='oxd-icon-button employee-image-action']"));
 	private final By SaveButton=By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']");	
 	
 	
